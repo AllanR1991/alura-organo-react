@@ -16,6 +16,7 @@
     border: none;
     box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.06);
     box-sizing: border-box;
+    color: #212121;
     font-family: var(--font-Montserrat);
     font-size: 16px;
     padding: 30px 21px;
