@@ -23,7 +23,11 @@ const Formulario = () => {
         <CampoTexto label="Cargo" placeholder="Digite seu cargo" />
         <CampoTexto label="Imagem" placeholder="Informe o endereço da imagem" />
         <ListaSuspensa label="Time" itens={times}/>
-        <Botao texto="Criar card"/>
+        {/* <Botao texto="Criar card"/> Forma comum de se fazer */}
+        {/* Porem podemos usar esse outro metodo para que possamos passar alem do texto alguma imagem para o botao */}
+        <Botao>
+          Criar card
+        </Botao>
       </form>
     </section>
   );
