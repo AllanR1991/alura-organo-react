@@ -8,11 +8,21 @@ const CampoTexto = (props) => {
     // Utilizando o Console.log cima, o console.log é duplicado 2x devido ao <React.StrictMode> no index.js na pasta src, pois ele renderiza 2x para validações, porem so ocorre no modo desenvolvimento.
 
     //const placeholderModificada = `${props.placeholder} ...`
+    
+    //let valor = 'Allan';
+
+    //hook
+    
+    const aoDigitado = (evento) => {
+        // target - evento do JS
+        props.aoAlterado(evento.target.value)
+    };
+
 
     return (
         <div className="campo-texto">
             <label>{props.label}</label>
-            <input required={props.obrigatorio} placeholder={props.placeholder}/>
+            <input value={props.valor} onChange={aoDigitado} required={props.obrigatorio} placeholder={props.placeholder}/>
         </div>
     );
 };
